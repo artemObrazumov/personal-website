@@ -31,17 +31,49 @@ h1 {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 24px;
+    padding-bottom: 48px;
 }
 .projects > .project {
     display: block;
     width: 32%;
+    margin-bottom: 24px;
+}
+.card {
     background: #ffffffaa;
     border-radius: 8px;
     backdrop-filter: blur(16px);
-    margin-bottom: 24px;
     padding: 16px;
     box-sizing: border-box;
 }
 .project_title {
     text-align: center;
+}
+.project_images {
+    position: relative;
+    height: 24vw;
+}
+.project_image_front, .project_image_back {
+    width: 14vw;
+    height: 20vw;
+    border-radius: 8px;
+    position: absolute;
+    background-size: cover;
+    transition: 0.3s ease;
+    filter: drop-shadow(0 0 8px #00000055);
+}
+.project_image_front {
+    z-index: 1;
+}
+.project_image_front {
+    left: 0;
+}
+.project_image_back {
+    margin-top: 2vw;
+    right: 0;
+}
+.project_images > *:hover {
+    z-index: 1;
+    transition: 0.3s ease;
+    scale: 1.1;
+    height: 28.5vw;
 }
