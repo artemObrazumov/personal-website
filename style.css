@@ -21,6 +21,14 @@ h1 {
     color: #fff;
     font-size: 64px;
 }
+h2 {
+    font-size: 36px;
+    margin: 24px 0;
+}
+h4 {
+    font-size: 28px;
+    margin: 12px 0;
+}
 .back_button {
     color: #fff;
     font-size: 24px;
@@ -58,6 +66,7 @@ h1 {
     border-radius: 8px;
     position: absolute;
     background-size: cover;
+    background-position: top center;
     transition: 0.3s ease;
     filter: drop-shadow(0 0 8px #00000055);
 }
@@ -75,5 +84,251 @@ h1 {
     z-index: 1;
     transition: 0.3s ease;
     scale: 1.1;
-    height: 28.5vw;
+    height: 24vw;
+    margin-top: -2vw;
+}
+.page_card {
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+.project_info {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.project_info br {
+    font-size: 100px;
+}
+.project_description {
+    font-size: 18px;
+}
+.screenshot_carousel {
+    overflow-x: scroll;
+    display: flex;
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+.screenshot_carousel a {
+    min-width: 16vw;
+    width: 16vw;
+    margin-right: 16px;
+}
+.screenshot_carousel img {
+    width: 100%;
+    pointer-events: none;
+}
+.flex_block {
+    display: flex;
+}
+.inner_container {
+    width: 70%;
+    margin: auto;
+}
+.name_block h2 {
+    margin-bottom: 0;
+}
+.name_block h4 {
+    margin-top: 12px;
+    font-weight: 500;
+}
+.badges {
+    flex-wrap: wrap;
+}
+.badge {
+    display: block;
+    width: fit-content;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    background: #000;
+    padding: 14px 18px;
+    padding-left: 38px;
+    border-radius: 8px;
+    font-weight: 600;
+    position: relative;
+    font-size: 20px;
+}
+.badges > .badge:last-child {
+    margin-right: 0;
+}
+.badge::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.badge.blue_circle {
+    background: #89a2f8;
+}
+.badge.blue_circle::before {
+    background: #6761df;
+}
+.badge.green_circle {
+    background: #45eb74;
+}
+.badge.green_circle::before {
+    background: #07ae36;
+}
+.badge.purple_circle {
+    background: #e093ff;
+}
+.badge.purple_circle::before {
+    background: #B125EA;
+}
+.badge.orange_circle {
+    background: #ffbb68;
+}
+.badge.orange_circle::before {
+    background: #f88c20;
+}
+.badge.light_blue_circle {
+    background: #78b5ff;
+}
+.badge.light_blue_circle::before {
+    background: #3a7ae9;
+}
+.badge.black_circle {
+    background: #404040;
+    color: #fff;
+}
+.badge.black_circle::before {
+    background: #000000;
+}
+.splitter {
+    background-color: #0000001b;
+    width: 90%;
+    height: 2px;
+    border-radius: 50%;
+    margin: 28px auto;
+}
+.index_card {
+    margin: 48px 0;
+}
+.button {
+    display: block;
+    width: fit-content;
+    margin-right: 16px;
+    background: #404040;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    position: relative;
+    color: #fff;
+}
+.button i {
+    margin: 0 8px;
+}
+.index_card {
+    padding: 36px;
+}
+
+@media(max-width: 1550px) {
+    .project_image_front, .project_image_back {
+        width: 18vw;
+        height: 24vw;
+    }
+    .project_images {
+        height: 26vw;
+    }
+    .project_images > *:hover {
+        height: 26vw;
+        margin-top: -1vw;
+    }
+}
+
+@media(max-width: 1350px) {
+    .container {
+        max-width: 768px;
+    }
+    .projects > .project {
+        width: 49%;
+    }
+    .project_images > *:hover {
+        height: 30vw;
+    }
+    .project_images {
+        height: 28vw;
+    }
+    .project_image_front, .project_image_back {
+        width: 20vw;
+        height: 26vw;
+    }
+    .project_image_back {
+        margin-top: 1vw;
+    }
+    .inner_container {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1050px) {
+    .project_image_front, .project_image_back {
+        width: 22vw;
+        height: 30vw;
+    }
+    .project_images {
+        height: 32vw;
+    }
+    .project_images > *:hover {
+        height: 32vw;
+        margin-top: -1vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        max-width: 90vw;
+    }
+    .projects > .project {
+        width: 100%;
+    }
+    .project_description {
+        text-align: center;
+    }
+    .project_image_front, .project_image_back {
+        width: 49%;
+        height: 70vw;
+    }
+    .project_images {
+        height: 70vw;
+    }
+    .project_image_back {
+        margin-top: 0;
+    }
+    .project_images > *:hover {
+        height: 70vw;
+        margin-top: 0;
+    }
+    .screenshot_carousel a {
+        min-width: 40vw;
+        width: 40vw;
+    }
+    h2 {
+        font-size: 28px;
+        margin: 16px 0;
+    }
+    .name_block h4 {
+        font-size: 24px;
+        margin: 8px 0;
+    }
+    .splitter {
+        margin: 14px auto;
+    }
+    .badge {
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+    .badges > .badge:last-child {
+        margin-right: 0;
+    }
+    .badge, .button {
+        font-size: 16px;
+    }
+    .index_card {
+        padding: 16px;
+    }
 }
