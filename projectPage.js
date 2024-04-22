@@ -87,8 +87,8 @@ function loadProject(id) {
         document.getElementById("project_info_paragraph").innerHTML = project.mainContent
         for(let i = 1; i <= project.screenshotCount; i++) {
             document.getElementById("screenshot_carousel").innerHTML +=
-                `<a href="../img/screenshot/`+id+i+`.jpg" target="_blank">
-                    <img src="../img/screenshot/`+id+i+`.jpg">
+                `<a href="img/screenshot/`+id+i+`.jpg" target="_blank">
+                    <img src="img/screenshot/`+id+i+`.jpg">
                 </a>`
         }
     } catch(e) {
