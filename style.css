@@ -225,6 +225,11 @@ h4 {
 .index_card {
     padding: 36px;
 }
+.project_error {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
 
 @media(max-width: 1550px) {
     .project_image_front, .project_image_back {
@@ -302,6 +307,7 @@ h4 {
     .project_images > *:hover {
         height: 70vw;
         margin-top: 0;
+        scale: 1;
     }
     .screenshot_carousel a {
         min-width: 40vw;
