@@ -162,34 +162,34 @@ h4 {
     margin: auto;
 }
 .badge.blue_circle {
-    background: #89a2f8;
+    background: #c6d3ff;
 }
 .badge.blue_circle::before {
-    background: #6761df;
+    background: #94b9ff;
 }
 .badge.green_circle {
-    background: #45eb74;
+    background: #afffc1;
 }
 .badge.green_circle::before {
-    background: #07ae36;
+    background: #5ae44a;
 }
 .badge.purple_circle {
-    background: #e093ff;
+    background: #ecbdff;
 }
 .badge.purple_circle::before {
-    background: #B125EA;
+    background: #cf59ff;
 }
 .badge.orange_circle {
-    background: #ffbb68;
+    background: #ffc885;
 }
 .badge.orange_circle::before {
-    background: #f88c20;
+    background: #ffa041;
 }
 .badge.light_blue_circle {
-    background: #78b5ff;
+    background: #b0dcff;
 }
 .badge.light_blue_circle::before {
-    background: #3a7ae9;
+    background: #74a7ff;
 }
 .badge.black_circle {
     background: #404040;
@@ -197,6 +197,13 @@ h4 {
 }
 .badge.black_circle::before {
     background: #000000;
+}
+.badge.red_circle {
+    background: #ffa5a5;
+    color: #fff;
+}
+.badge.red_circle::before {
+    background: #ed2e2e;
 }
 .splitter {
     background-color: #0000001b;
